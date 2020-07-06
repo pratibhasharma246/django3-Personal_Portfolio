@@ -1,14 +1,16 @@
-  
+
+
 .navbar-nav .nav-link {
-    color: rgba(0,0,0,1) !important;
+    color: #42ed13 !important;
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgba(0,0,0,.5) !important;
+    color: #ed1337 !important;
 }
 
 body {
     font-family: 'Lato', sans-serif;
+    background-image: url('../portfolio/image1.jpg');
 }
 
 #blogtitle {

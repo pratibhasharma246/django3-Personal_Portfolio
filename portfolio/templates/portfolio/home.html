@@ -5,18 +5,18 @@
 {% block content %}
 
 <div class="row justify-content-center my-3">
-  <div class="col-5">
+  <div class="col-4">
     <img src="{% static 'portfolio/pratibha.jpg' %}" class="img-fluid">
   </div>
 </div>
 
 <div class="row justify-content-center mb-3">
   <div class="col-md-9 text-center">
-    <h1 id="hometext" class="font-weight-bold">This is my first website 😊</h1>
+    <h1 id="hometext" class="font-weight-bold" style="color: hsla(101, 100%, 50%, 0.904);">My name is Pratibha Sharma.I am pursuing B.TECH from HCST Farah Mathura. 😊</h1>
   </div>
 </div>
 
-<h2 class="mt-5">Portfolio</h2>
+<h2 class="mt-5" style="color: rgb(0, 255, 0);">Images</h2>
 <hr>
 <div class="row">
   {% for Project in Projects %}
@@ -30,8 +30,8 @@
 
     <img src="{{ Project.image.url }}" class="img-fluid mb-2">
     {% endif %}
-    <h3>{{ Project.title }}</h3>
-    <p>{{ Project.description }}</p>
+    <h3 style="color: rgb(38, 0, 255);">{{ Project.title }}</h3>
+    <p style="color: rgb(255, 30, 0);">{{ Project.description }}</p>
 
   </div>
   {% endfor %}

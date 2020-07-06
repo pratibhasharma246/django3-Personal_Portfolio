@@ -4,10 +4,10 @@
 
 {% block content %}
 
-<h1 class="text-center mt-5" id="blogdetailtitle">{{ blog.title }}</h1>
+<h1 class="text-center mt-5" id="blogdetailtitle" style="color: rgb(255, 230, 0);">{{ blog.title }}</h1>
 
-<h5 class="text-center text-muted mb-5">{{ blog.date|date:'F jS Y' }}</h5>
+<h5 class="text-center text-muted mb-5" style="color: rgb(255, 17, 0);" >{{ blog.date|date:'F jS Y' }}</h5>
 
-{{ blog.description|safe }}
+<h6 class="text-warning">{{ blog.description|safe }}</h6>
 
 {% endblock %}
